@@ -34,7 +34,7 @@
       "name": "5",
       "setup": "",
       "run": "python3 tree_height.py",
-      "input": "F\r\n5",
+      "input": "F\r\n05",
       "output": "8",
       "comparison": "included",
       "timeout": 2,
