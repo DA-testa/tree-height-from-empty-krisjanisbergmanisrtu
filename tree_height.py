@@ -84,7 +84,7 @@ def main():
     elif "I" in text:
         n = input()
         parents = input()
-        parents = input().split(' ')
+        parents = parents.split(' ')
 
     # Delete this block
     # file = open("./test/" + "01", "r")
