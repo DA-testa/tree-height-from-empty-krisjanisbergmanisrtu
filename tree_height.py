@@ -103,7 +103,6 @@ def main():
         nodes.append(Node(value=None, indx=None, level=None, parent=None, is_root=False))
 
     print(compute_height(n, parents))
-    print(nodes)
 
     # input number of elements
     # input values in one variable, separate with space, split these values in an array
