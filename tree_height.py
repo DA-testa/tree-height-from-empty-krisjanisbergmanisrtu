@@ -66,7 +66,7 @@ Node = namedtuple('Node', ['value', 'indx', 'level', 'parent', 'is_root'])
 def main():
     # implement input form keyboard and from files
     text = input()
-    parents = None
+    parents = ""
     n = ""
 
     if "F" in text:
@@ -84,6 +84,7 @@ def main():
     elif "I" in text:
         n = input()
         parents = input()
+        parents = input().split(' ')
 
     # Delete this block
     # file = open("./test/" + "01", "r")
