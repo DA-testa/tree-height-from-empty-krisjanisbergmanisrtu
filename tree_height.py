@@ -6,7 +6,6 @@ from collections import namedtuple
 
 
 def find_parent(i, parents):
-    # parent = Node(value=None, indx=None, level=None, parent=None, is_root=None)
 
     if not getattr(nodes[i], 'value'):  # parent does not exist in Nodes then we also have to find its parent
         new_parent = find_parent(parents[i], parents)
@@ -47,10 +46,10 @@ def compute_height(n, parents):
         if not nodes[i].is_root:  # If not root then continue find level (height)
             parent = find_parent(i, parents)
             nodes[i] = nodes[i]._replace(parent=parent)
-            nodes[i] = nodes[i]._replace(level=getattr(parent, 'level') + 1)
+            nodes[i] = nodes[i]._replace(level=getattr(parent, 'level'))
 
-        if tree_height < getattr(parent, 'level'):
-            tree_height = getattr(parent, 'level')
+        if tree_height < getattr(nodes[i], 'level'):
+            tree_height = getattr(nodes[i], 'level')
 
     return tree_height
 
