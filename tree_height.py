@@ -86,15 +86,6 @@ def main():
         parents = input()
         parents = parents.split(' ')
 
-    # Delete this block
-    # file = open("./test/" + "01", "r")
-    # text = file.read()
-    #
-    # text = text.split('\n')
-    # n = text[0]
-    # parents = text[1].split(' ')
-    #####
-
     # cast to ints
     n = int(n)
     parents = [eval(i) for i in parents]
