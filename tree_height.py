@@ -66,7 +66,7 @@ Node = namedtuple('Node', ['value', 'indx', 'level', 'parent', 'is_root'])
 def main():
     # implement input form keyboard and from files
     text = input()
-    parents = ""
+    parents = None
     n = ""
 
     if "F" in text:
