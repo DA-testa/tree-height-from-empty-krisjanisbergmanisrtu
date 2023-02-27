@@ -54,7 +54,7 @@ def compute_height(n, parents):
     return tree_height
 
 
-nodes = []  # This will store nodes that we have already handled (I don't know if I really need it yet)
+nodes = []  # This will store nodes that we have already handled
 # value - one of the parent values we enter
 # indx - index in array of  values we entered
 # level - in which level this node is located in
